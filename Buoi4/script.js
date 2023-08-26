@@ -1,33 +1,35 @@
-// class Human {
-//     constructor(name, age, dob, hobbies) { // hàm khởi tạo
-//         this.name = name; // key - value
-//         this.age = age;
-//         this.dob = dob;
-//         this.hobbies = hobbies;
-//     }
-
-//     walk() {
-//         return this.name + " is walking";
-//     }
-// }
 
 
 
-// class Student extends Human {
-//     constructor(name, age, dob, hobbies, avg) {
-//         super(name, age, dob, hobbies);        
-//         this.avg = avg;
-//     }
 
-//     study() {
-//         return this.name + " is studying";
-//     }
-// }
+class Human {
+    constructor(name, age, dob, hobbies) { // hàm khởi tạo
+        this.name = name; // key - value
+        this.age = age;
+        this.dob = dob;
+        this.hobbies = hobbies;
+    }
+
+    walk() {
+        return this.name + " is walking";
+    }
+}
+
+class Student extends Human {
+    constructor(name, age, dob, hobbies, avg) {
+        super(name, age, dob, hobbies);
+        this.avg = avg;
+    }
+
+    study() {
+        return this.name + " is studying";
+    }
+}
 
 
-// const ThienKim = new Student("Thien Kim", 18, "01/01/2000", ["Reading", "Watching"], 9.0);
+const ThienKim = new Student("Thien Kim", 18, "01/01/2000", ["Reading", "Watching"], 9.0);
 
-// const HoangThong = new Human("Hoang Thong", 18, "01/01/2000", ["Reading", "Watching"]);
+const HoangThong = new Human("Hoang Thong", 18, "01/01/2000", ["Reading", "Watching"]);
 
 
 // username/password không được rỗng
